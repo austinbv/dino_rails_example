@@ -1,0 +1,21 @@
+%button#on
+  On
+%button#off
+  Off
+:javascript
+  $('#on').click(function(){
+    $.get('/on')
+  });
+
+  $('#off').click(function(){
+    $.get('/off')
+  });
+
+  var pusher = new Pusher('7778b7d8392aab29dd55');
+  var channel = pusher.subscribe('button');
+  channel.bind('down', function(data) {
+    $('body').css({background: 'red'})
+  });
+  channel.bind('up', function(data) {
+    $('body').css({background: 'white'})
+  });
