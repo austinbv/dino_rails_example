@@ -5,7 +5,7 @@ gem 'rails', '3.2.8'
 gem 'sqlite3'
 gem 'haml'
 gem 'pusher'
-gem 'dino'
+gem 'dino', '~> 0.11.2'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
