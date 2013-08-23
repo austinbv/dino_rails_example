@@ -11,7 +11,7 @@
     $.get('/off')
   });
 
-  var pusher = new Pusher('7778b7d8392aab29dd55');
+  var pusher = new Pusher('#{Pusher.key}');
   var channel = pusher.subscribe('button');
   channel.bind('down', function(data) {
     $('body').css({background: 'red'})
