@@ -1,0 +1,6 @@
+# create an account on http://pusher.com/
+# and put your credentials bellow.
+
+app_id: your-app-id
+key: your-key
+secret: your-secret
