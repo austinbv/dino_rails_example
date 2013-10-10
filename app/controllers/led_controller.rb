@@ -6,10 +6,14 @@ class LedController < ApplicationController
 
   def on
     @led.on
+
+    render :nothing => true
   end
 
   def off
     @led.off
+
+    render :nothing => true
   end
 
   private
